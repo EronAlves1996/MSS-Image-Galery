@@ -19,12 +19,12 @@ This document have the objective to describe what technologies are used in this 
 
 For all microsservices that are necessary for this project, the same back-end technologies gonna be used:
 
-- **Node.Js:**
-- **Fastify:**
-- **GraphQL-Helix:**
-- **GraphQL.Js:**
-- **Prisma ORM:**
-- **Auth.js:**
+- **Node.Js:** Javascript runtime with a good range of functionalities, emphasizing almost reactive I/O capabilities and the possibility to use Js on backend and frontend;
+- **Fastify:** A better HTTP Server framework, faster than Express and a good option to use in backend;
+- **GraphQL-Helix:** A framework agnostic GraphQL over HTTP framework, which makes simple to open a graphql endpoint and publish any schema;
+- **GraphQL.Js:** GraphQL library, necessary for defining schemas, types and resolvers;
+- **Prisma ORM:** ORM library, that makes the database access and communication more simple. Database modelling is more simple too;
+- **Auth.js:** Authorization library, to handle user authentication/authorization.
 
 ## Database
 
