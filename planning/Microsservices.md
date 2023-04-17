@@ -18,3 +18,7 @@ This microsservice gonna have the following responsibilities:
 - Handle photo storage
 
 ## Overall Services Schema
+
+![arch](./arch.png)
+
+The frontend will manage the callings to microsservices according the data needed.
