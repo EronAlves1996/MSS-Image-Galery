@@ -15,6 +15,7 @@ This document have the objective to describe what technologies are used in this 
 ## Front-End
 
 - **React:** React is a modern front-end library to handle any sort of reactive UI complexity. Gonna be used because Relay is a GraphQL fetching for React;
+- **Next.js:** Nowadays, with React docs update, there are default recommendations of frameworks to work with React. I gonna use the default recommmendation, which is Next.Js, to learn and speed up development and use it's optimizations capabilities;
 - **Relay:** Relay is the Meta's solution for GraphQL on frontend. Also, the GraphQL specification was provided by Meta. Relay can handle a heavy data driven frontend which uses GraphQL and it really shines by providing the data requirements of every component;
 - **Radix:** An agnostic design system who provides pre-built UI components unstyled, for faster development of UI;
 - **Tailwind:** A post-processing CSS library for faster development. It helps in the finishing of components under Radix.
