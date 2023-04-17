@@ -35,4 +35,4 @@ For all microsservices that are necessary for this project, the same back-end te
 
 For all microsservices that are necessary for this project, the same DBMS gonna be used:
 
-- **PostgreSQL:**
+- **PostgreSQL:** Postgres is a modern and popular database, with relational nature, great documentation, and downsides and it's solutions well documented.
