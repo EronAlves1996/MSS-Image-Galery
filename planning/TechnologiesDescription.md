@@ -8,6 +8,10 @@ This document have the objective to describe what technologies are used in this 
 
 - **GraphQL:** GraphQL is a simple solution for fetching data from the server without using too much requests and without going for the BFF pattern. With proper technology, the backend schema can be modified and validated on frontend, make it a suitable and secure choice to build a typesafe distributed application.
 
+## Type System
+
+- **Typescript:** To ensure the application gonna works as expected and catch any javascript bugs due to undefined variables or implicit conversions, Typescript is absolutely necessary for it. Application can grow more robust and reliable.
+
 ## Front-End
 
 - **React:** React is a modern front-end library to handle any sort of reactive UI complexity. Gonna be used because Relay is a GraphQL fetching for React;
