@@ -1,0 +1,7 @@
+{
+  "name": "mss_image_galery",
+  "version": "1.0.0",
+  "description": "Image galery built upon Node.Js microsservices",
+  "author": "Eron Alves",
+  "license": "MIT"
+}
