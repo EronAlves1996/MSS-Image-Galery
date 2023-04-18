@@ -6,6 +6,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <section className="flex flex-col p-5">
+        <h2>Galeria</h2>
+        <section>
+          <Sidebar />
+          <div></div>
+        </section>
+      </section>
     </>
   );
 }
@@ -35,3 +42,18 @@ const Navbar = () => {
     </NavigationMenu.Root>
   );
 };
+
+const Sidebar = () => (
+  <>
+    <NavigationMenu.Root>
+      <NavigationMenu.List className="flex flex-col gap-5">
+        <NavigationMenu.Item className="pt-4">
+          <NavigationMenu.Link>Item 1</NavigationMenu.Link>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item className="border-t-2 border-t-gray-400 pt-4">
+          <NavigationMenu.Link>Item 2</NavigationMenu.Link>
+        </NavigationMenu.Item>
+      </NavigationMenu.List>
+    </NavigationMenu.Root>
+  </>
+);
