@@ -3,10 +3,5 @@
   "version": "1.0.0",
   "description": "Image galery built upon Node.Js microsservices",
   "author": "Eron Alves",
-  "license": "MIT",
-  "workspaces": [
-    "./apps/web",
-    "./apps/server-user",
-    "./apps/server-photo"
-  ]
+  "license": "MIT"
 }
