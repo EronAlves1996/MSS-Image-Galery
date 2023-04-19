@@ -25,16 +25,15 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col p-5 gap-4">
-        <h2 className="text-7xl ml-32">Galeria</h2>
-        <section className="flex gap-4">
-          <Sidebar className="flex-shrink-0" />
-          <div className="flex flex-wrap gap-1">
-            {images.map((image) => (
-              <ImageItem imageName={image} />
-            ))}
-          </div>
-        </section>
+      <section className="grid grid-cols-sidebar-content grid-rows-2 gap-3 p-5">
+        <div></div>
+        <h2 className="text-7xl">Galeria</h2>
+        <Sidebar className="w-32" />
+         <div className="flex flex-wrap gap-1">
+           {images.map((image) => (
+             <ImageItem imageName={image} />
+           ))}
+         </div>
       </section>
     </>
   );
@@ -66,10 +65,10 @@ const Navbar = () => {
   );
 };
 
-const Sidebar = ({ className }: { className: string | undefined }) => (
+const Sidebar = ({ className }: { className?: string }) => (
   <>
     <NavigationMenu.Root {...{ className }}>
-      <NavigationMenu.List className="flex flex-col gap-5 max-w-7xl">
+      <NavigationMenu.List className="flex flex-col gap-5">
         <NavigationMenu.Item className="pt-4">
           {/*TODO: edit link to point to new album */}
           <NavigationMenu.Link href="#" className={HOVER_LINK}>
