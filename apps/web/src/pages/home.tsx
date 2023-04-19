@@ -1,3 +1,4 @@
+import { HOVER_LINK } from "@/utils/cssClasses";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 export default function Home() {
