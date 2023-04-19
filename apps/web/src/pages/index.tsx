@@ -24,7 +24,7 @@ const IndexLogo = ({ className }: { className?: string }) => (
 );
 
 const LoginSlot = () => (
-  <div className="z-20 border-gray-600 border-solid border-2 rounded-lg bg-white opacity-80 mr-7 w-[27rem]">
+  <div className="z-20 border-gray-600 border-solid border-2 rounded-lg bg-white opacity-80 mr-7 w-[27rem] flex flex-col p-3 py-8">
     <form className="p-7 flex flex-col gap-5">
       <p className="text-center font-bold">Comece já a aproveitar!!</p>
       <div className="flex flex-col">
@@ -54,5 +54,8 @@ const LoginSlot = () => (
         </button>
       </div>
     </form>
+    <button className="border-gray-500 border-solid border-2 bg-cyan-300 rounded-md p-1 hover:bg-cyan-500 hover:text-white w-20 self-center">
+      Registrar
+    </button>
   </div>
 );
