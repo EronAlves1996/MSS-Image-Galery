@@ -16,6 +16,11 @@ The objectives where this project is based on are:
 
 The project planning docs are all available on `Planning` directory
 
+## Requirements to running the monorepo
+
+- Turborepo 1.9.3
+- pnpm 7.24.3
+
 ## License
 
 This project is licensed under MIT terms.
