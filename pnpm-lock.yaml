@@ -18,6 +18,7 @@ importers:
       '@types/react': 18.0.37
       '@types/react-dom': 18.0.11
       autoprefixer: 10.4.14
+      eslint-config-custom: workspace:*
       next: 13.3.0
       postcss: 8.4.22
       react: 18.2.0
@@ -30,6 +31,7 @@ importers:
       '@types/react': 18.0.37
       '@types/react-dom': 18.0.11
       autoprefixer: 10.4.14_postcss@8.4.22
+      eslint-config-custom: link:../../packages/eslint-config-custom
       next: 13.3.0_biqbaboplfbrettd7655fr4n2y
       postcss: 8.4.22
       react: 18.2.0
@@ -37,7 +39,7 @@ importers:
       tailwindcss: 3.3.1_postcss@8.4.22
       typescript: 5.0.4
 
-  packages/eslint-config:
+  packages/eslint-config-custom:
     specifiers:
       eslint: 8.38.0
       eslint-config-next: 13.3.0
