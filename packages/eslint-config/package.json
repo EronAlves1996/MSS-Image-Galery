@@ -1,12 +1,16 @@
 {
   "name": "eslint-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "eslint config for this monorepo",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-config-turbo": "latest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "typescript": "latest"
+  }
 }
