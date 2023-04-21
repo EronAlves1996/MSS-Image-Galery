@@ -2,8 +2,9 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import MenuItems from "./MenuItems";
 
 export default function Navbar({ pathname }: { pathname: string }) {
-  const navigationMenuFlexPosition =
-    pathname === "/" ? "justify-end" : "justify-between";
+  const navigationMenuFlexPosition = ["/", "/register"].includes(pathname)
+    ? "justify-end"
+    : "justify-between";
 
   return (
     <NavigationMenu.Root>
