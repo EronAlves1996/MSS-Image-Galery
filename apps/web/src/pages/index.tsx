@@ -1,7 +1,3 @@
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <div className="bg-[url('/demo-photo.png')] bg-repeat-x h-[90vh] w-screen relative">
