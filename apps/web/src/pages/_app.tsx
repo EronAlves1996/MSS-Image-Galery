@@ -5,7 +5,6 @@ import { useMemo, useEffect } from "react";
 import { RelayPageProps } from "../relay-types";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
-import { NextComponentType, NextPageContext } from "next";
 import type { AppProps } from "next/app";
 
 export default function App({
@@ -28,24 +27,8 @@ export default function App({
 
   return (
     <RelayEnvironmentProvider environment={environment}>
-      <Temporary {...{ Component, pageProps, pathname }} />
-    </RelayEnvironmentProvider>
-  );
-}
-
-function Temporary({
-  pathname,
-  pageProps,
-  Component,
-}: {
-  pathname: string;
-  pageProps: any;
-  Component: NextComponentType<NextPageContext, any, any>;
-}) {
-  return (
-    <>
       <Navbar {...{ pathname }} />
       <Component {...pageProps} />
-    </>
+    </RelayEnvironmentProvider>
   );
 }
