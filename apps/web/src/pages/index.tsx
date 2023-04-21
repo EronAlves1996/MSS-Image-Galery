@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="bg-[url('/demo-photo.png')] bg-repeat-x h-[90vh] w-screen relative">
@@ -51,7 +53,7 @@ const LoginSlot = () => (
       </div>
     </form>
     <button className="border-gray-500 border-solid border-2 bg-cyan-300 rounded-md p-1 hover:bg-cyan-500 hover:text-white w-20 self-center">
-      Registrar
+      <Link href={"/register"}>Registrar</Link>
     </button>
   </div>
 );
