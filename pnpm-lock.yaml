@@ -57,6 +57,7 @@ importers:
       eslint-config-prettier: latest
       eslint-config-turbo: latest
       eslint-plugin-react: latest
+      eslint-plugin-relay: ^1.8.3
       typescript: latest
     dependencies:
       eslint: 8.38.0
@@ -64,6 +65,7 @@ importers:
       eslint-config-prettier: 8.8.0_eslint@8.38.0
       eslint-config-turbo: 1.9.3_eslint@8.38.0
       eslint-plugin-react: 7.32.2_eslint@8.38.0
+      eslint-plugin-relay: 1.8.3
     devDependencies:
       typescript: 5.0.4
 
@@ -1280,6 +1282,12 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: false
 
+  /eslint-plugin-relay/1.8.3:
+    resolution: {integrity: sha512-awyrwntUTZ7Z+lJUnniTCnJdZYr1dY2djQDARMx1P1y2BFMsBjtTljBK0lBEM7yiTHPBwVnE2OSnXxcD4yMb0A==}
+    dependencies:
+      graphql: 15.8.0
+    dev: false
+
   /eslint-plugin-turbo/1.9.3_eslint@8.38.0:
     resolution: {integrity: sha512-ZsRtksdzk3v+z5/I/K4E50E4lfZ7oYmLX395gkrUMBz4/spJlYbr+GC8hP9oVNLj9s5Pvnm9rLv/zoj5PVYaVw==}
     peerDependencies:
@@ -1628,6 +1636,11 @@ packages:
 
   /grapheme-splitter/1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
+    dev: false
+
+  /graphql/15.8.0:
+    resolution: {integrity: sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==}
+    engines: {node: '>= 10.x'}
     dev: false
 
   /has-bigints/1.0.2:
