@@ -3,7 +3,7 @@ import GithubMenuItem from "./GithubMenuItem";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 export default function MenuItems({ pathname }: { pathname: string }) {
-  if (pathname === "/")
+  if (["/", "/register"].includes(pathname))
     return (
       <div>
         <GithubMenuItem />

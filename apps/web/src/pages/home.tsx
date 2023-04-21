@@ -1,8 +1,6 @@
 import { HOVER_LINK } from "@/utils/cssClasses";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-
-
-const HOVER_LINK = "hover:font-bold";
+import Image from "next/image";
 
 //TODO: delete fake thumbs data
 const images = [
@@ -26,23 +24,21 @@ const images = [
 export default function Home() {
   return (
     <>
-      <Navbar />
       <section className="grid grid-cols-sidebar-content grid-rows-2 gap-3 p-5">
         <div></div>
         <h2 className="text-7xl">Galeria</h2>
         <Sidebar className="w-32" />
-         <div className="flex flex-wrap gap-1">
-           {images.map((image) => (
-             <ImageItem imageName={image} />
-           ))}
-         </div>
+        <div className="flex flex-wrap gap-1">
+          {images.map((image) => (
+            <ImageItem imageName={image} key={image} />
+          ))}
+        </div>
       </section>
     </>
   );
 }
 
-
-const Sidebar = () => (
+const Sidebar = ({ className }: { className?: string }) => (
   <>
     <NavigationMenu.Root {...{ className }}>
       <NavigationMenu.List className="flex flex-col gap-5">
@@ -66,7 +62,11 @@ const Sidebar = () => (
 const ImageItem = ({ imageName }: { imageName: string }) => {
   return (
     <>
-      <img src={`fakeThumbs/${imageName}`} className="w-48 hover:opacity-60" />
+      <Image
+        alt=""
+        src={`fakeThumbs/${imageName}`}
+        className="w-48 hover:opacity-60"
+      />
     </>
   );
 };
