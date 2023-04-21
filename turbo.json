@@ -1,13 +1,17 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "pipeline": {
-        "lint": {},
-        "build": {
-            "dependsOn": ["^build"],
-            "outputs": [".next/**", "!.next/cache/**"]
-        },
-        "dev": {
-          "dependsOn": ["lint"]
-        }
-      }
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".env"],
+  "pipeline": {
+    "lint": {},
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": ["GRAPHQL_ENDPOINT"]
+    },
+    "dev": {
+      "dependsOn": ["lint"],
+      "env": ["GRAPHQL_ENDPOINT"],
+      "cache": false
+    }
+  }
 }
