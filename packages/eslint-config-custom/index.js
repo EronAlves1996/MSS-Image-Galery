@@ -4,6 +4,7 @@ module.exports = {
     "turbo",
     "prettier",
     "eslint:recommended",
-    "relay",
+    "plugin:relay/recommended",
   ],
+  plugins: ["relay"],
 };
