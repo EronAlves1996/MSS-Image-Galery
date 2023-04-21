@@ -32,7 +32,8 @@ export default function Register() {
   return (
     <div className="bg-[url('/demo-photo.png')] bg-repeat-x h-[90vh] w-screen relative -z-0">
       <div className="bg-gradient-to-br from-white from-30% to-transparent h-[100%] w-[100%] top-0 left-0 absolute -z-10" />
-      <section className="flex p-7">
+      <section className="flex flex-col gap-10 p-7 ml-32">
+        <h2 className="text-7xl">Se Registrar</h2>
         <form className="z-10 w-80 flex flex-col gap-4">
           {registerFormConfig.map((el) => (
             <FormInputField {...el} key={el.id} />
